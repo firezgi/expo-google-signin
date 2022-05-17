@@ -17,7 +17,6 @@ export default function App() {
   useEffect(() => {
     if (response?.type === 'success') {
       const { authentication,type } = response;
-      console.log(type)
       setLoggedIn(type)
       }
   }, [response]);
